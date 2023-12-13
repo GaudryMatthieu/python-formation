@@ -3,22 +3,26 @@
 def valideAge():
     while True:
         try:
-            age = input("Give me your age :")
+            age = int(input("Give me your age :"))
             if age > 0 and age < 120:
                 return age
             else :
-                print("Your age cannot be negative")
+                print("Your age cannot be negative or more than 120 (you must be dead)")
         except ValueError:
             print("That is not a valid number, please enter a number.")
 
 def valideName():
     while True:
         name = input("Give me your name :")
-        if len(name) >=2:
-            return name 
-        else :
-            print("Please make sure the name has at least two characters.")
+        try:
+            for index in range(len(name)):
+                int(name[index])
 
+            print("That isn't a valide name, please try again")
+            valideName()    
+
+        except ValueError:
+            return name 
 
 def main():
     name = valideName()
@@ -27,4 +31,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
