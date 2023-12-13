@@ -7,12 +7,12 @@ def area(length, width):
 def verification():
     
     length = input("Give me the length of your rectangle: ")
-    while not length.isdigit():
+    while not length.isdigit() > 0:
         print("Invalid input! Please enter a positive number.")
         length = input("Give me the length of your rectangle again: ")
 
     width = input("Give me the width of your rectangle: ")
-    while not width.isdigit():
+    while not width.isdigit() > 0:
         print("Invalid input! Please enter a positive number.")
         width = input("Give me the length of your rectangle again: ")
 
