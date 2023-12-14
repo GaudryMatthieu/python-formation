@@ -13,6 +13,7 @@ def giveValideNumber():
             
         except ValueError:
             print("That's not a valide number. Please enter a valide number.")
+            giveValideNumber()
 
 def main():
     bool = giveValideNumber()   
