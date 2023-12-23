@@ -8,7 +8,6 @@ def pangram(string):
                 alphabet = alphabet.replace(char, "")
     return alphabet == ""
     
-
 def main():
     string = "abcdefghijklmnoprrstuvwxyz"
     result = pangram(string)
