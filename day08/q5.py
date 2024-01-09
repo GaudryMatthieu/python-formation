@@ -7,7 +7,7 @@ def salary_average(file_path):
        
         next(reader, None)
 
-        average = 0
+        average = 0 
         counter = 0
         
         for row in reader:

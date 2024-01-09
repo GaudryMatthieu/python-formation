@@ -7,7 +7,7 @@ def best_grade(file_path):
         reader = csv.reader(file)
        
         next(reader, None)
-
+ 
         best_student = None
         best_grade = float('-inf') 
 
