@@ -15,7 +15,7 @@ def main():
         header = next(reader, None)
         
         for employee_data in reader:
-            someone = Employee(*employee_data)
+            someone = Employee(employee_data)
             print(f"Name: {someone.name}, Position: {someone.position}, Salary: {someone.salary}")
 
 if __name__ == "__main__":
