@@ -1,0 +1,9 @@
+{
+    "product_id": "P666",
+    "name": "USB Rubber Ducky",
+    "description": "Plug it, trust me !",
+    "price": 199.99,
+    "currency": "USD",
+    "stock_quantity": 100,
+    "category": "Electronics"
+}
